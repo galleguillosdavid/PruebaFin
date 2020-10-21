@@ -1,8 +1,8 @@
 package com.example.intento7.Model.Repository
 
 import android.util.Log
-import com.example.intento7.Model.NetworkWithRetrofit.RetrofitClient
-import com.example.intento7.Model.NetworkWithRetrofit.SuperHeroes
+import com.example.intento7.Model.Repository.NetworkWithRetrofit.RetrofitClient
+import com.example.intento7.Model.Repository.NetworkWithRetrofit.SuperHeroes
 import com.example.intento7.Model.RoomLocal.SuperHeroesDao
 import com.example.intento7.Model.RoomLocal.SuperHeroesEntity
 import kotlinx.coroutines.CoroutineScope
@@ -19,7 +19,7 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
     val allSuperHeroesLiveData = superHeroesDao.showAllSuperHeroes()
 //    La vieja confiable
 
-    fun getDataFromServer() {
+    fun getDataFromServerWithOutCoroutines() {
         val call = retroService.fetchAllSuperHeroes()
         call.enqueue(object : Callback<List<SuperHeroes>> {
             override fun onResponse(
@@ -27,19 +27,17 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
                 response: Response<List<SuperHeroes>>
             ) {
                 when(response.code()){
-                    in 200..299 -> Log.d("acierto",response.body().toString())
-                    CoroutineScope(Dispatchers.IO).launch {
-                        response.body()?.let {
-                            superHeroesDao.insertAllSuperHeroes(convert(it))
+                    in 200..299 -> CoroutineScope(Dispatchers.IO).launch {
+                            response.body()?.let {
+                                superHeroesDao.insertAllSuperHeroes(converters(it))
+                            }
                         }
-                    }
                     in 300..399 -> Log.d("acierto",response.body().toString())
                     in 400..499 -> Log.d("acierto",response.body().toString())
                     in 500..599 -> Log.d("acierto",response.body().toString())
                     else -> Log.d("acierto",response.body().toString())
 
                 }
-                Log.d("error",response.body().toString())
             }
 
             override fun onFailure(call: Call<List<SuperHeroes>>, t: Throwable) {
@@ -48,8 +46,9 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
         })
     }
 
-    fun convert(listFromNetwork: List<SuperHeroes>): List<SuperHeroesEntity> {
+    fun converters(listFromNetwork: List<SuperHeroes>): List<SuperHeroesEntity> {
         val listMutable = mutableListOf<SuperHeroesEntity>()
+
         listFromNetwork.map {
             listMutable.add(
                 SuperHeroesEntity(

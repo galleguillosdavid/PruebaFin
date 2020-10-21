@@ -6,9 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "super_heroes_table")
 data class SuperHeroesEntity(
-    @PrimaryKey
-    @NonNull
-    val id: Int,
+    @PrimaryKey @NonNull val id: Int,
     val imageXs: String,
     val imageLg: String,
     val name: String,

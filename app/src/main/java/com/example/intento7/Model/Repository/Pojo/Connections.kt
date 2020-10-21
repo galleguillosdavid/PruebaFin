@@ -1,4 +1,4 @@
-package com.example.intento7.Model.Pojo
+package com.example.intento7.Model.Repository.Pojo
 
 
 import com.google.gson.annotations.SerializedName

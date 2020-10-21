@@ -1,4 +1,4 @@
-package com.example.intento7.Model.NetworkWithRetrofit
+package com.example.intento7.Model.Repository.NetworkWithRetrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -14,6 +14,5 @@ private const val URL_BASE = "https://akabab.github.io/superhero-api/api"
                 .build()
         return mRetrofit.create(SuperHeroesApi::class.java)
         }
-
     }
 }
