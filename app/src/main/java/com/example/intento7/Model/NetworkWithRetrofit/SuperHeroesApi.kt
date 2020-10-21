@@ -1,4 +1,4 @@
-package com.example.intento7.Model.Network
+package com.example.intento7.Model.NetworkWithRetrofit
 
 import retrofit2.Call
 import retrofit2.Response

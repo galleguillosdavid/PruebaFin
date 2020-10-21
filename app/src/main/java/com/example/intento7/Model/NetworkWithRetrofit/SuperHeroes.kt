@@ -1,4 +1,4 @@
-package com.example.intento7.Model.Network
+package com.example.intento7.Model.NetworkWithRetrofit
 
 
 import com.example.intento7.Model.Pojo.*
