@@ -50,9 +50,6 @@ class SecondFragment : Fragment() {
                     
                 }
             })
-            view.findViewById<Button>(R.id.button2).setOnClickListener {
-                findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-            }
         })
     }
 }

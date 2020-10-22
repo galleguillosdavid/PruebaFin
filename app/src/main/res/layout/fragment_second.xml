@@ -5,6 +5,7 @@
     android:id="@+id/constrain1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
     tools:context=".ui.SecondFragment">
 
     <ScrollView
@@ -23,8 +24,19 @@
             android:id="@+id/linear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_launcher_background"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:scrollbarDefaultDelayBeforeFade="0"
+            android:scrollbarFadeDuration="0">
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarDefaultDelayBeforeFade="0"
+                android:scrollbarFadeDuration="0"
+                android:textAlignment="center"
+                android:textColor="#011A57"
+                android:textSize="36sp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -46,10 +58,6 @@
                         android:layout_height="wrap_content"
                         android:text="Name" />
 
-                    <TextView
-                        android:id="@+id/textview2"
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent" />
                 </TableRow>
 
                 <TableRow
@@ -86,12 +94,6 @@
                 </TableRow>
             </TableLayout>
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="179dp"
-                android:text="@string/previous" />
         </LinearLayout>
     </ScrollView>
 

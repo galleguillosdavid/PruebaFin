@@ -8,7 +8,7 @@ import androidx.room.Query
 
 @Dao
 interface SuperHeroesDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAllSuperHeroes(mList : List<SuperHeroesEntity>)
 
     @Query("SELECT * FROM super_heroes_table")
