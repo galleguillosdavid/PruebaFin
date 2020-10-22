@@ -1,7 +1,7 @@
-package com.example.intento7.modelWithRepository.networkWithRetrofit
+package com.example.intento7.model.repository.networkWithRetrofit
 
 
-import com.example.intento7.modelWithRepository.networkWithRetrofit.pojo.*
+import com.example.intento7.model.repository.networkWithRetrofit.pojo.*
 import com.google.gson.annotations.SerializedName
 
 data class SuperHeroes(

@@ -1,10 +1,10 @@
-package com.example.intento7.modelWithRepository
+package com.example.intento7.model.repository
 
 import android.util.Log
-import com.example.intento7.modelWithRepository.networkWithRetrofit.RetrofitClient
-import com.example.intento7.modelWithRepository.networkWithRetrofit.SuperHeroes
-import com.example.intento7.modelWithRepository.roomLocal.SuperHeroesDao
-import com.example.intento7.modelWithRepository.roomLocal.SuperHeroesEntity
+import com.example.intento7.model.repository.networkWithRetrofit.RetrofitClient
+import com.example.intento7.model.repository.networkWithRetrofit.SuperHeroes
+import com.example.intento7.model.repository.roomLocal.SuperHeroesDao
+import com.example.intento7.model.repository.roomLocal.SuperHeroesEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.example.intento7.modelWithRepository.roomLocal
+package com.example.intento7.model.repository.roomLocal
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

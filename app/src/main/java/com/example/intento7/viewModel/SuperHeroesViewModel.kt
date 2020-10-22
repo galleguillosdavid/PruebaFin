@@ -3,9 +3,9 @@ package com.example.intento7.viewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.example.intento7.modelWithRepository.SuperHeroesRepository
-import com.example.intento7.modelWithRepository.roomLocal.SuperHeroesDataBaseClient
-import com.example.intento7.modelWithRepository.roomLocal.SuperHeroesEntity
+import com.example.intento7.model.repository.SuperHeroesRepository
+import com.example.intento7.model.repository.roomLocal.SuperHeroesDataBaseClient
+import com.example.intento7.model.repository.roomLocal.SuperHeroesEntity
 
 class SuperHeroesViewModel(application: Application): AndroidViewModel(application) {
     private val mRepository: SuperHeroesRepository
