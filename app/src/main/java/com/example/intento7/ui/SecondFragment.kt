@@ -46,7 +46,8 @@ class SecondFragment : Fragment() {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
                     Glide.with(this).load(it.imageLg).apply(RequestOptions.circleCropTransform()).into(imageView2)
-                    textview2.text = it.name
+                    textView2.text = it.name
+
                     
                 }
             })
