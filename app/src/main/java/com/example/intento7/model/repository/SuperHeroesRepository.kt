@@ -1,6 +1,7 @@
 package com.example.intento7.model.repository
 
 import android.util.Log
+import androidx.lifecycle.LiveData
 import com.example.intento7.model.repository.networkWithRetrofit.RetrofitClient
 import com.example.intento7.model.repository.networkWithRetrofit.SuperHeroes
 import com.example.intento7.model.repository.roomLocal.SuperHeroesDao
@@ -17,8 +18,13 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
     private val retroService = RetrofitClient.getRetrofitClient()
     // Este muestra toda la tabla de super heroes entity
     val allSuperHeroesLiveData = superHeroesDao.showAllSuperHeroes()
-//    La vieja confiable
 
+    //Expensder un livedata
+    fun getSuperHeroesByid(id: Int): LiveData<SuperHeroesEntity>{
+        return superHeroesDao.showOneSuperHeroesById(id)
+    }
+
+    //    Corroutines
     fun getDataFromServerWithOutCoroutines() {
         val call = retroService.fetchAllSuperHeroes()
         call.enqueue(object : Callback<List<SuperHeroes>> {

@@ -59,7 +59,9 @@ class FirstFragment : Fragment(), PassTheData {
     }
 
     override fun passTheSuperHeroes(superHeroes: SuperHeroesEntity) {
-        TODO("Not yet implemented")
+        val bundle= Bundle()
+        bundle.putInt("id",superHeroes.id)
+        findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
     }
 
 }

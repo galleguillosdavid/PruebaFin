@@ -17,4 +17,7 @@ class SuperHeroesViewModel(application: Application): AndroidViewModel(applicati
         mRepository.getDataFromServerWithOutCoroutines()
         liveDataFromLocal = mRepository.allSuperHeroesLiveData
     }
+    fun getSuperHeroesByid(id: Int): LiveData<SuperHeroesEntity>{
+        return mRepository.getSuperHeroesByid(id)
+    }
 }
