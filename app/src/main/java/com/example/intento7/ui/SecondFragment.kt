@@ -45,10 +45,10 @@ class SecondFragment : Fragment() {
         model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
-                    textView2.text= it.name
-//                    textView2.text= it.alterEgos
-//                    textView2.text= it.height.toString()
-//                    textView2.text= it.id.toString()
+                    textView2.text= it.name + " N° "+it.id.toString()
+                    textView3.text= "Verdadera personaidad: "+it.alterEgos
+                    textView4.text= "Altura: "+it.height.toString()
+
                     val SuperHeroesSelectImg= Glide.with(this).load(it.imageLg).apply(RequestOptions.circleCropTransform()).into(imageView2)
                 }
             })
