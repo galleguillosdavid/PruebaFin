@@ -10,5 +10,4 @@ class HeightTypeConverter {
     @TypeConverter
     fun jsonToString(value: String) =
         Gson().fromJson(value,Array<String>::class.java).toList()
-
 }

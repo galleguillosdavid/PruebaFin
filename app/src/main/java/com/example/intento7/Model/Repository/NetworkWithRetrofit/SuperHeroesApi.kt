@@ -7,12 +7,12 @@ import retrofit2.http.GET
 interface SuperHeroesApi {
 
     //vieja confiable
-    @GET("/all.json")
+    @GET("all.json")
     fun fetchAllSuperHeroes(): Call<List<SuperHeroes>>
 
 
     //Corroutines
-    @GET("/all.json")
+    @GET("all.json")
     suspend fun ferchAllSuperHeroesWithCorroutines(): Response<List<SuperHeroes>>
 }
 

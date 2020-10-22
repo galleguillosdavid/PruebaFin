@@ -36,10 +36,8 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
                     in 400..499 -> Log.d("acierto",response.body().toString())
                     in 500..599 -> Log.d("acierto",response.body().toString())
                     else -> Log.d("acierto",response.body().toString())
-
                 }
             }
-
             override fun onFailure(call: Call<List<SuperHeroes>>, t: Throwable) {
                 Log.e("error", t.message.toString())
             }
