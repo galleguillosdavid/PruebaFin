@@ -6,22 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.FirstFragment">
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="551dp" />
-
-    <TextView
-        android:id="@+id/textview_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="415dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecyclerView1"
         android:layout_width="match_parent"

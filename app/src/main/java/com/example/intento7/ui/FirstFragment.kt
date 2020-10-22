@@ -52,10 +52,6 @@ class FirstFragment : Fragment(), PassTheData {
             Log.d("View", it.toString())
             mAdapter.updateAdapter(it)
         })
-
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
     }
 
     override fun passTheSuperHeroes(superHeroes: SuperHeroesEntity) {
