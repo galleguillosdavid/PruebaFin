@@ -1,4 +1,4 @@
-package com.example.intento7.Model.RoomLocal
+package com.example.intento7.modelWithRepository.roomLocal
 
 import androidx.annotation.NonNull
 import androidx.room.Entity

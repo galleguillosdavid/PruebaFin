@@ -1,4 +1,4 @@
-package com.example.intento7.Ui
+package com.example.intento7.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
