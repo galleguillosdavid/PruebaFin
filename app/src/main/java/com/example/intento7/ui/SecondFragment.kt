@@ -10,6 +10,7 @@ import android.widget.Button
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.intento7.R
 import com.example.intento7.viewModel.SuperHeroesViewModel
 import kotlinx.android.synthetic.main.fragment_second.*
@@ -44,8 +45,9 @@ class SecondFragment : Fragment() {
         model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
-                    Glide.with(this).load(it.imageLg).into(imageView2)
+                    Glide.with(this).load(it.imageLg).apply(RequestOptions.circleCropTransform()).into(imageView2)
                     textview2.text = it.name
+                    
                 }
             })
             view.findViewById<Button>(R.id.button2).setOnClickListener {
