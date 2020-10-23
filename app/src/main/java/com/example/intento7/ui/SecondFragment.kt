@@ -53,6 +53,9 @@ class SecondFragment : Fragment() {
                     textView2.text = fullName
                     textView3.text = "Otro Yo " + it.alterEgos
                     textView4.text = "Altura: " + it.height.toString()
+                    textView5.text = "Color de ojos: " + it.eyeColor.toString()
+                    textView6.text = "Alias: " + it.aliases.toString()
+
                     
                     val SuperHeroesSelectImg = Glide.with(this).load(it.imageLg).apply(RequestOptions.circleCropTransform()).into(imageView2)
                 }

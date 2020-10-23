@@ -61,7 +61,9 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
                     it.images.lg,
                     it.name,
                     it.biography.alterEgos,
-                    it.appearance.height
+                    it.appearance.height,
+                    it.appearance.eyeColor,
+                        it.biography.aliases
                 )
             )
         }

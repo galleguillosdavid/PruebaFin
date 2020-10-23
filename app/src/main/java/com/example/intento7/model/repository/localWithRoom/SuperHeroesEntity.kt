@@ -11,5 +11,7 @@ data class SuperHeroesEntity(
     val imageLg: String,
     val name: String,
     val alterEgos: String,
-    val height: List<String>
+    val height: List<String>,
+    val eyeColor: String,
+    val aliases: List<String>
 )
