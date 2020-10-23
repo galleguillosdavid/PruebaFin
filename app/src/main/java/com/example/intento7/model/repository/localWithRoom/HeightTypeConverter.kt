@@ -1,4 +1,4 @@
-package com.example.intento7.model.repository.roomLocal
+package com.example.intento7.model.repository.localWithRoom
 
 import androidx.room.TypeConverter
 import com.google.gson.Gson

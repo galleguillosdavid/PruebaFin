@@ -1,4 +1,4 @@
-package com.example.intento7.model.repository.roomLocal
+package com.example.intento7.model.repository.localWithRoom
 
 import android.content.Context
 import androidx.room.Database

@@ -7,8 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.intento7.R
-import com.example.intento7.model.repository.roomLocal.SuperHeroesEntity
-import kotlinx.android.synthetic.main.fragment_second.*
+import com.example.intento7.model.repository.localWithRoom.SuperHeroesEntity
 import kotlinx.android.synthetic.main.super_heroes_item_list.view.*
 
 class SuperHeroesAdapter(val mPassTheData: PassTheData): RecyclerView.Adapter<SuperHeroesAdapter.SuperHeroesViewHolder>() {
@@ -36,7 +35,6 @@ class SuperHeroesAdapter(val mPassTheData: PassTheData): RecyclerView.Adapter<Su
     override fun onBindViewHolder(holder: SuperHeroesViewHolder, position: Int) {
         val superHeroes= superHeroesList[position]
         Glide.with(holder.itemView.context).load(superHeroes.imageLg).apply(RequestOptions.circleCropTransform()).into(holder.image)
-//        Glide.with(this).load(it.imageLg).apply(RequestOptions.circleCropTransform()).into(imageView2)
         holder.name.text= superHeroes.name
     }
 

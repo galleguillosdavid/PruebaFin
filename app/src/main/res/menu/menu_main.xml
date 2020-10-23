@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.intento7.ui.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/Hombres"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item android:title="Mujeres" />
+    <item android:title="Con alter ego" />
+    <item android:title="Sin alter Ego" />
+    <item android:title="Pequeños" />
 </menu>

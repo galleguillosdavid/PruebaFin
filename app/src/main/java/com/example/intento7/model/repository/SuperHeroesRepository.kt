@@ -4,8 +4,8 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import com.example.intento7.model.repository.networkWithRetrofit.RetrofitClient
 import com.example.intento7.model.repository.networkWithRetrofit.SuperHeroes
-import com.example.intento7.model.repository.roomLocal.SuperHeroesDao
-import com.example.intento7.model.repository.roomLocal.SuperHeroesEntity
+import com.example.intento7.model.repository.localWithRoom.SuperHeroesDao
+import com.example.intento7.model.repository.localWithRoom.SuperHeroesEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
