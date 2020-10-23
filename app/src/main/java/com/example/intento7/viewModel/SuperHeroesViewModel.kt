@@ -20,4 +20,10 @@ class SuperHeroesViewModel(application: Application): AndroidViewModel(applicati
     fun getSuperHeroesByid(id: Int): LiveData<SuperHeroesEntity>{
         return mRepository.getSuperHeroesByid(id)
     }
+    fun deleteAll(){
+        mRepository.deleteAllSuperHeroes()
+    }
+    fun insertOneSuperHeroe(mSoperHeroesEntity: SuperHeroesEntity) {
+        mRepository.insertOneSuperHero(mSoperHeroesEntity)
+    }
 }

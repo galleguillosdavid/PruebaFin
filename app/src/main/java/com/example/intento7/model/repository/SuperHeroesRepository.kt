@@ -19,9 +19,17 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
     // Este muestra toda la tabla de super heroes entity
     val allSuperHeroesLiveData = superHeroesDao.showAllSuperHeroes()
 
-    //Expensder un livedata
+    //Exponer un livedata
     fun getSuperHeroesByid(id: Int): LiveData<SuperHeroesEntity>{
         return superHeroesDao.showOneSuperHeroesById(id)
+    }
+
+    fun deleteAllSuperHeroes(){
+        superHeroesDao.deleteAllSuperHeroes()
+    }
+
+    fun insertOneSuperHero(mSuperHeroe:SuperHeroesEntity){
+        superHeroesDao.insertOneSuperHero(mSuperHeroe)
     }
 
     //    Corroutines

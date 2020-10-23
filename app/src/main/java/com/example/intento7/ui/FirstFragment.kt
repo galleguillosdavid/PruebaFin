@@ -41,8 +41,8 @@ class FirstFragment : Fragment(), PassTheData {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
+//      todo"",.  var stringList: List<String> = listOf("a","b")
+//        model.insertOneSuperHeroe(SuperHeroesEntity(999,"https://photos.app.goo.gl/ddzj9bqNQpejVDsz6","https://photos.app.goo.gl/ddzj9bqNQpejVDsz6","David Galleguillos","FrondaBrick",stringList,"2",stringList))
         val recyclerView = RecyclerView1
         recyclerView.adapter = mAdapter
         recyclerView.layoutManager = GridLayoutManager(context,2)
@@ -57,5 +57,4 @@ class FirstFragment : Fragment(), PassTheData {
         bundle.putInt("id",superHeroes.id)
         findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, bundle)
     }
-
 }
