@@ -1,4 +1,4 @@
-package com.example.intento7.model.repository.networkWithRetrofit
+package com.example.intento7.model.repository.localWithRoom.networkWithRetrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

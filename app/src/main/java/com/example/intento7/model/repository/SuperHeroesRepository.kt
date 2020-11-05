@@ -2,8 +2,8 @@ package com.example.intento7.model.repository
 
 import android.util.Log
 import androidx.lifecycle.LiveData
-import com.example.intento7.model.repository.networkWithRetrofit.RetrofitClient
-import com.example.intento7.model.repository.networkWithRetrofit.SuperHeroes
+import com.example.intento7.model.repository.localWithRoom.networkWithRetrofit.RetrofitClient
+import com.example.intento7.model.repository.localWithRoom.networkWithRetrofit.SuperHeroes
 import com.example.intento7.model.repository.localWithRoom.SuperHeroesDao
 import com.example.intento7.model.repository.localWithRoom.SuperHeroesEntity
 import kotlinx.coroutines.CoroutineScope
@@ -65,13 +65,34 @@ class SuperHeroesRepository(private val superHeroesDao: SuperHeroesDao) {
             listMutable.add(
                 SuperHeroesEntity(
                     it.id,
-                    it.images.xs,
-                    it.images.lg,
-                    it.name,
-                    it.biography.alterEgos,
-                    it.appearance.height,
                     it.appearance.eyeColor,
-                        it.biography.aliases
+                    it.appearance.gender,
+                    it.appearance.hairColor,
+                    it.appearance.race,
+                    it.appearance.height,
+                    it.appearance.weight,
+                    it.biography.alignment,
+                    it.biography.alterEgos,
+                    it.biography.firstAppearance,
+                    it.biography.fullName,
+                    it.biography.placeOfBirth,
+                    it.biography.publisher,
+                    it.connections.groupAffiliation,
+                    it.connections.relatives,
+                    it.images.lg,
+                    it.images.md,
+                    it.images.sm,
+                    it.images.xs,
+                    it.name,
+                    it.powerstats.combat,
+                    it.powerstats.durability,
+                    it.powerstats.intelligence,
+                    it.powerstats.power,
+                    it.powerstats.speed,
+                    it.powerstats.strength,
+                    it.slug,
+                    it.work.base,
+                    it.work.occupation
                 )
             )
         }

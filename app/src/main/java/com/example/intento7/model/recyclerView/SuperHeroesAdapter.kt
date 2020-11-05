@@ -34,7 +34,7 @@ class SuperHeroesAdapter(val mPassTheData: PassTheData): RecyclerView.Adapter<Su
 
     override fun onBindViewHolder(holder: SuperHeroesViewHolder, position: Int) {
         val superHeroes= superHeroesList[position]
-        Glide.with(holder.itemView.context).load(superHeroes.imageLg).apply(RequestOptions.circleCropTransform()).into(holder.image)
+        Glide.with(holder.itemView.context).load(superHeroes.lg).apply(RequestOptions.circleCropTransform()).into(holder.image)
         holder.name.text= superHeroes.name
     }
 

@@ -1,4 +1,4 @@
-package com.example.intento7.model.repository.networkWithRetrofit.pojo
+package com.example.intento7.model.repository.localWithRoom.networkWithRetrofit.pojo
 
 
 import com.google.gson.annotations.SerializedName
@@ -13,7 +13,7 @@ data class Appearance(
     @SerializedName("height")
     val height: List<String>,
     @SerializedName("race")
-    val race: String,
+    val race: String="Sin especificar",
     @SerializedName("weight")
     val weight: List<String>
 )

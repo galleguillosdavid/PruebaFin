@@ -51,13 +51,11 @@ class SecondFragment : Fragment() {
                 if (it != null) {
                     fullName = it.name + " N° " + it.id.toString()
                     textView2.text = fullName
-                    textView3.text = "Otro Yo " + it.alterEgos
-                    textView4.text = "Altura: " + it.height.toString()
-                    textView5.text = "Color de ojos: " + it.eyeColor.toString()
-                    textView6.text = "Alias: " + it.aliases.toString()
-
-                    
-                    val SuperHeroesSelectImg = Glide.with(this).load(it.imageLg).apply(RequestOptions.circleCropTransform()).into(imageView2)
+//                    textView3.text = "Otro Yo " + it.alterEgos
+//                    textView4.text = "Altura: " + it.height.toString()
+//                    textView5.text = "Color de ojos: " + it.eyeColor.toString()
+//                    textView6.text = "Alias: " + it.fullName.toString()
+                    val SuperHeroesSelectImg = Glide.with(this).load(it.lg).apply(RequestOptions.circleCropTransform()).into(imageView2)
                 }
             })
         })
