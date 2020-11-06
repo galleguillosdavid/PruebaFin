@@ -28,7 +28,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewCode"
         android:layout_width="0dp"
         android:layout_height="23dp"
         android:layout_marginStart="1dp"

@@ -9,4 +9,26 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="textViewName">name</string>
+    <string name="textViewCode">Code</string>
+    <string name="textViewFullName">fullName</string>
+    <string name="textViewAlterEgos">alterEgos</string>
+    <string name="textViewFirstAppearance">firstAppearance</string>
+    <string name="gender">gender</string>
+    <string name="textViewAlignment">alignment</string>
+    <string name="textViewBase">base</string>
+    <string name="textViewEyeColor">eyeColor</string>
+    <string name="textViewGroupAffiliation">groupAffiliation</string>
+    <string name="textViewHairColor">hairColor</string>
+    <string name="textViewOccupation">occupation</string>
+    <string name="textViewPlaceOfBith">placeOfBirth</string>
+    <string name="textViewPublisher">publisher</string>
+    <string name="textViewRace">race</string>
+    <string name="textViewRelatives">relatives</string>
+    <string name="textViewSlug">slug</string>
+    <string name="textViewXs">xs</string>
+    <string name="textViewSm">sm</string>
+    <string name="textViewMd">md</string>
+    <string name="textViewLg">lg</string>
 </resources>

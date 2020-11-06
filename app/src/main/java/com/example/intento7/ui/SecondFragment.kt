@@ -1,5 +1,6 @@
 package com.example.intento7.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,7 +14,7 @@ import com.example.intento7.R
 import com.example.intento7.viewModel.SuperHeroesViewModel
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_second.*
-import kotlinx.android.synthetic.main.fragment_second.textView1
+import kotlinx.android.synthetic.main.fragment_second.textViewCode
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -41,33 +42,34 @@ class SecondFragment : Fragment() {
 
 
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
-                    textView.text = it.name
-                    textView1.text = "Code " + it.id.toString()
-                    textView2.text = "Full Name " + it.fullName
-                    textView3.text = "Alter Egos " +  it.alterEgos
-                    textView4.text = "First Appearance " +  it.firstAppearance
-                    textView5.text = "Gender " +  it.gender
-                    textView6.text = "Full Name " +  it.alignment
-                    textView7.text = "Alignment " +  it.base
-                    textView8.text = "Eye Color " +  it.eyeColor
-                    textView9.text = "Group Affiliation " +  it.groupAffiliation
-                    textView10.text = "Hair Color " +  it.hairColor
-                    textView11.text = "Occupation " +  it.occupation
-                    textView12.text = "Place Of Birth " +  it.placeOfBirth
-                    textView13.text = "Publisher " +  it.publisher
-                    textView14.text = "Race " +  it.race
-                    textView15.text = "Relatives " +  it.relatives
-                    textView16.text = "Slug " +  it.slug
-                    textView17.text = "Xs " +  it.xs
-                    textView18.text = "Sm " +  it.sm
-                    textView19.text = "Md " +  it.md
-                    textView20.text = "Lg " +  it.lg
+                    textViewName.text = it.name
+                    textViewCode.text = "Code :" + it.id.toString()
+                    textViewFullName.text = "Full Name :" + it.fullName
+                    textViewAlterEgos.text = "Alter Egos :" +  it.alterEgos
+                    textViewFirstAppearance.text = "First Appearance :" +  it.firstAppearance
+                    gender.text = "Gender :" +  it.gender
+                    textViewAlignment.text = "Alignment :" +  it.alignment
+                    textViewBase.text = "Base :" +  it.base
+                    textViewEyeColor.text = "Eye Color :" +  it.eyeColor
+                    textViewGroupAffiliation.text = "Group Affiliation :" +  it.groupAffiliation
+                    textViewHairColor.text = "Hair Color :" +  it.hairColor
+                    textViewOccupation.text = "Occupation :" +  it.occupation
+                    textViewPlaceOfBith.text = "Place Of Birth :" +  it.placeOfBirth
+                    textViewPublisher.text = "Publisher :" +  it.publisher
+                    textViewRace.text = "Race :" +  it.race
+                    textViewRelatives.text = "Relatives :" +  it.relatives
+                    textViewSlug.text = "Slug :" +  it.slug
+                    textViewXs.text = "Xs :" +  it.xs
+                    textViewSm.text = "Sm :" +  it.sm
+                    textViewMd.text = "Md :" +  it.md
+                    textViewLg.text = "Lg :" +  it.lg
 
 //                    val xs = Glide.with(this).load(it.xs).apply(RequestOptions.circleCropTransform()).into(imageView2)
 //                    val sm = Glide.with(this).load(it.sm).apply(RequestOptions.circleCropTransform()).into(imageView2)

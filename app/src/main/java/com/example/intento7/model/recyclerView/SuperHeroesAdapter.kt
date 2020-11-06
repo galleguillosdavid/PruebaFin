@@ -21,7 +21,7 @@ class SuperHeroesAdapter(val mPassTheData: PassTheData): RecyclerView.Adapter<Su
 
     inner class SuperHeroesViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val image = itemView.imageView1
-        val name = itemView.textView1
+        val name = itemView.textViewCode
         val clickListener = itemView.setOnClickListener{
         mPassTheData.passTheSuperHeroes((superHeroesList[adapterPosition]))
         }

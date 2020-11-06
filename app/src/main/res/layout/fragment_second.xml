@@ -38,217 +38,217 @@
                 tools:src="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center_horizontal"
-                android:text="TextView"
+                android:text="@string/textViewName"
                 android:textColor="@color/red_jones"
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/textViewCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewCode"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewFullName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="@string/textViewFullName"
                 android:textColor="@color/red_jones"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewAlterEgos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewAlterEgos"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewFirstAppearance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewFirstAppearance"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/gender"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textViewAlignment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewAlignment"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textViewBase"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewBase"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textViewEyeColor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewEyeColor"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textViewGroupAffiliation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewGroupAffiliation"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textViewHairColor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewHairColor"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textViewOccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewOccupation"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textViewPlaceOfBith"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewPlaceOfBith"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textViewPublisher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewPublisher"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/textViewRace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewRace"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textViewRelatives"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewRelatives"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textViewSlug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewSlug"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/textViewXs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewXs"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/textViewSm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewSm"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/textViewMd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView"
+                android:text="@string/textViewMd"
                 android:textColor="@color/red_jones" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/textViewLg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
-                android:text="TextView" />
+                android:text="@string/textViewLg" />
 
         </LinearLayout>
     </ScrollView>
