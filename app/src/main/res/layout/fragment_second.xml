@@ -69,11 +69,11 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextFullName"
-                        android:layout_width="wrap_content"
+                        android:layout_width="105dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="textPersonName"
@@ -92,7 +92,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextHairColor"
@@ -136,7 +136,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextCode"
@@ -181,7 +181,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextSlug"
@@ -225,7 +225,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextAlterEgos"
@@ -269,7 +269,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextAlignment"
@@ -336,7 +336,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextRelatives"
@@ -402,7 +402,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextViewMd"
@@ -446,7 +446,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextViewXs"
@@ -468,7 +468,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/editTextViewLg"
