@@ -29,7 +29,6 @@ class SecondFragment : Fragment() {
         arguments?.let {
             superheroesId = it.getInt("id")
         }
-
     }
 
     override fun onCreateView(
@@ -38,7 +37,6 @@ class SecondFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second, container, false)
-
     }
 
 
@@ -49,13 +47,32 @@ class SecondFragment : Fragment() {
         model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
-                    fullName = it.name + " N° " + it.id.toString()
-                    textView2.text = fullName
-//                    textView3.text = "Otro Yo " + it.alterEgos
-//                    textView4.text = "Altura: " + it.height.toString()
-//                    textView5.text = "Color de ojos: " + it.eyeColor.toString()
-//                    textView6.text = "Alias: " + it.fullName.toString()
-                    val SuperHeroesSelectImg = Glide.with(this).load(it.lg).apply(RequestOptions.circleCropTransform()).into(imageView2)
+                    textView.text = it.name
+                    textView1.text = it.id.toString()
+                    textView2.text = it.fullName
+                    textView3.text =  it.alterEgos
+                    textView4.text =  it.firstAppearance
+                    textView5.text =  it.gender
+                    textView6.text =  it.alignment
+                    textView7.text =  it.base
+                    textView8.text =  it.eyeColor
+                    textView9.text =  it.groupAffiliation
+                    textView10.text =  it.hairColor
+                    textView11.text =  it.occupation
+                    textView12.text =  it.placeOfBirth
+                    textView13.text =  it.publisher
+                    textView14.text =  it.race
+                    textView15.text =  it.relatives
+                    textView16.text =  it.slug
+                    textView17.text =  it.slug
+                    textView18.text =  it.slug
+                    textView19.text =  it.slug
+                    textView20.text =  it.slug
+
+                    val xs = Glide.with(this).load(it.xs).apply(RequestOptions.circleCropTransform()).into(imageView2)
+                    val sm = Glide.with(this).load(it.sm).apply(RequestOptions.circleCropTransform()).into(imageView2)
+                    val md = Glide.with(this).load(it.md).apply(RequestOptions.circleCropTransform()).into(imageView2)
+                    val lg = Glide.with(this).load(it.lg).apply(RequestOptions.circleCropTransform()).into(imageView2)
                 }
             })
         })
