@@ -49,31 +49,31 @@ class SecondFragment : Fragment() {
         model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
-                    textViewName.text = it.name
-                    textViewCode.text = "Code :" + it.id.toString()
-                    textViewFullName.text = "Full Name :" + it.fullName
-                    textViewAlterEgos.text = "Alter Egos :" +  it.alterEgos
-                    textViewFirstAppearance.text = "First Appearance :" +  it.firstAppearance
-                    gender.text = "Gender :" +  it.gender
-                    textViewAlignment.text = "Alignment :" +  it.alignment
-                    textViewBase.text = "Base :" +  it.base
-                    textViewEyeColor.text = "Eye Color :" +  it.eyeColor
-                    textViewGroupAffiliation.text = "Group Affiliation :" +  it.groupAffiliation
-                    textViewHairColor.text = "Hair Color :" +  it.hairColor
-                    textViewOccupation.text = "Occupation :" +  it.occupation
-                    textViewPlaceOfBith.text = "Place Of Birth :" +  it.placeOfBirth
-                    textViewPublisher.text = "Publisher :" +  it.publisher
-                    textViewRace.text = "Race :" +  it.race
-                    textViewRelatives.text = "Relatives :" +  it.relatives
-                    textViewSlug.text = "Slug :" +  it.slug
-                    textViewXs.text = "Xs :" +  it.xs
-                    textViewSm.text = "Sm :" +  it.sm
-                    textViewMd.text = "Md :" +  it.md
-                    textViewLg.text = "Lg :" +  it.lg
+                    textViewName.text =             it.name
+                    textViewCode.text =             "Code              : " + it.id.toString()
+                    textViewFullName.text =         "Full Name         : " + it.fullName
+                    textViewAlterEgos.text =        "Alter Egos        : " +  it.alterEgos
+                    textViewFirstAppearance.text =  "First Appearance  : " +  it.firstAppearance
+                    gender.text =                   "Gender            : " +  it.gender
+                    textViewAlignment.text =        "Alignment         : " +  it.alignment
+                    textViewBase.text =             "Base              : " +  it.base
+                    textViewEyeColor.text =         "Eye Color         : " +  it.eyeColor
+                    textViewGroupAffiliation.text = "Group Affiliation : " +  it.groupAffiliation
+                    textViewHairColor.text =        "Hair Color        : " +  it.hairColor
+                    textViewOccupation.text =       "Occupation        : " +  it.occupation
+                    textViewPlaceOfBith.text =      "Place Of Birth    : " +  it.placeOfBirth
+                    textViewPublisher.text =        it.publisher
+                    textViewRace.text =             "Race              : " +  it.race
+                    textViewRelatives.text =        "Relatives         : " +  it.relatives
+                    textViewSlug.text =             "Slug              : " +  it.slug
+                    textViewXs.text =               "Xs                : " +  it.xs
+                    textViewSm.text =               "Sm                : " +  it.sm
+                    textViewMd.text =               "Md                : " +  it.md
+                    textViewLg.text =               "Lg                : " +  it.lg
 
-//                    val xs = Glide.with(this).load(it.xs).apply(RequestOptions.circleCropTransform()).into(imageView2)
-//                    val sm = Glide.with(this).load(it.sm).apply(RequestOptions.circleCropTransform()).into(imageView2)
-//                    val md = Glide.with(this).load(it.md).apply(RequestOptions.circleCropTransform()).into(imageView2)
+//                    val xs = Glide.with(this).load(it.xs).apply(RequestOptions.circleCropTransform()).into(imageView5)
+//                    val sm = Glide.with(this).load(it.sm).apply(RequestOptions.circleCropTransform()).into(imageView4)
+//                    val md = Glide.with(this).load(it.md).apply(RequestOptions.circleCropTransform()).into(imageView3)
                     val lg = Glide.with(this).load(it.lg).apply(RequestOptions.circleCropTransform()).into(imageView2)
                 }
             })

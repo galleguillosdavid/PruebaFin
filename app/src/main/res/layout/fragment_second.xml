@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@drawable/border1"
     android:textAlignment="center"
     tools:context=".ui.SecondFragment">
 
@@ -22,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
+            android:background="@drawable/border1"
             android:orientation="vertical">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -50,205 +50,444 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/textViewCode"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewCode"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewFullName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:gravity="center"
-                android:text="@string/textViewFullName"
-                android:textColor="@color/red_jones"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/textViewAlterEgos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewAlterEgos"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewFirstAppearance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewFirstAppearance"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/gender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/gender"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewAlignment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewAlignment"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewBase"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewBase"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewEyeColor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewEyeColor"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewGroupAffiliation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewGroupAffiliation"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewHairColor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewHairColor"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewOccupation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewOccupation"
-                android:textColor="@color/red_jones" />
-
-            <TextView
-                android:id="@+id/textViewPlaceOfBith"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewPlaceOfBith"
-                android:textColor="@color/red_jones" />
-
-            <TextView
                 android:id="@+id/textViewPublisher"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
                 android:text="@string/textViewPublisher"
-                android:textColor="@color/red_jones" />
+                android:textColor="@color/red_jones"
+                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/textViewRace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewRace"
-                android:textColor="@color/red_jones" />
+                android:layout_marginRight="30dp">
 
-            <TextView
-                android:id="@+id/textViewRelatives"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewRelatives"
-                android:textColor="@color/red_jones" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textViewSlug"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewSlug"
-                android:textColor="@color/red_jones" />
+                    <EditText
+                        android:id="@+id/editTextFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewFullName"
+                        android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/textViewXs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewXs"
-                android:textColor="@color/red_jones" />
+                    <TextView
+                        android:id="@+id/textViewFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewFullName"
+                        android:textColor="@color/red_jones"
+                        android:textSize="14sp" />
+                </TableRow>
 
-            <TextView
-                android:id="@+id/textViewSm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewSm"
-                android:textColor="@color/red_jones" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textViewMd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewMd"
-                android:textColor="@color/red_jones" />
+                    <EditText
+                        android:id="@+id/editTextHairColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewHairColor"
+                        android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/textViewLg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp"
-                android:text="@string/textViewLg" />
+                    <TextView
+                        android:id="@+id/textViewHairColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewHairColor"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextViewRace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewRace"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewRace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewRace"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewCode"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewCode"
+                        android:textColor="@color/red_jones" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextViewBase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewBase"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewBase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewBase"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextSlug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewSlug"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSlug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewSlug"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextGroupAffiliation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewGroupAffiliation"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewGroupAffiliation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewGroupAffiliation"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextAlterEgos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewAlterEgos"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewAlterEgos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewAlterEgos"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextEyeColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewEyeColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEyeColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewEyeColor"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextAlignment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewAlignment"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewAlignment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewAlignment"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextFirstAppearance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewFirstAppearance"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewFirstAppearance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewFirstAppearance"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextPlaceOfBith"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewPlaceOfBith"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPlaceOfBith"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewPlaceOfBith"
+                        android:textColor="@color/red_jones" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextRelatives"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewRelatives"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewRelatives"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewRelatives"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextOccupation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewOccupation"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewOccupation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewOccupation"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextgender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/gender"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextViewMd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewMd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewMd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewMd"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextViewSm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewSm"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewSm"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextViewXs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewXs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewXs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewXs"
+                        android:textColor="@color/red_jones" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextViewLg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/textViewLg"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewLg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/textViewLg" />
+                </TableRow>
+
+            </TableLayout>
 
         </LinearLayout>
     </ScrollView>
