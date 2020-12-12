@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.intento7.R
 import com.example.intento7.viewModel.SuperHeroesViewModel
 import com.google.android.material.snackbar.Snackbar
@@ -46,10 +48,10 @@ class SecondFragment : Fragment() {
         model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
             model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 if (it != null) {
-//                    textViewName.text =             it.name
-//                    textViewCode.text =             it.id.toString()
-//                    textViewFullName.text =         it.fullName
-//                    textViewAlterEgos.text =        it.alterEgos
+                    textViewId.text =             it.Id.toString()
+                    textViewName.text =             it.Name
+                    textViewPrice.text =         it.Price.toString()
+                    val im = Glide.with(this).load(it.Image).apply(RequestOptions.circleCropTransform()).into(imageView2)
 //                    textViewFirstAppearance.text =  it.firstAppearance
 //                    gender.text =                   it.gender
 //                    textViewAlignment.text =        it.alignment

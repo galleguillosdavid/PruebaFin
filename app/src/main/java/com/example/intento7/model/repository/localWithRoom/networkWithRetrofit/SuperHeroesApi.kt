@@ -1,6 +1,6 @@
 package com.example.intento7.model.repository.localWithRoom.networkWithRetrofit
 
-import com.example.intento7.model.repository.localWithRoom.networkWithRetrofit.Pojo2.Min
+import com.example.intento7.model.repository.localWithRoom.networkWithRetrofit.pojo3.Gen3Item
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
@@ -8,12 +8,12 @@ import retrofit2.http.GET
 interface SuperHeroesApi {
 
     //vieja confiable
-    @GET("api/")
-    fun fetchAllSuperHeroes(): Call<Min>
+    @GET("products//")
+    fun fetchAllSuperHeroes(): Call<Gen3Item>
 
 
     //Corroutines
-    @GET("api/")
-    suspend fun ferchAllSuperHeroesWithCorroutines(): Response<Min>
+    @GET("products//")
+    suspend fun ferchAllSuperHeroesWithCorroutines(): Response<Gen3Item>
 }
 

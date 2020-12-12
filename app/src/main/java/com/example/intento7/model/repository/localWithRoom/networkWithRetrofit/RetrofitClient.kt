@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitClient {
     companion object {
-private const val URL_BASE = "https://mindicador.cl/"
+private const val URL_BASE = "https://my-json-server.typicode.com/Himuravidal/FakeAPIdata/"
 
         fun getRetrofitClient(): SuperHeroesApi {
             val mRetrofit = Retrofit.Builder()
