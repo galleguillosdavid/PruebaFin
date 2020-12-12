@@ -45,7 +45,9 @@ class PhonesRepository(private val phonesDao: PhonesDao) {
                 when (response.code()) {
                     in 200..299 -> CoroutineScope(Dispatchers.IO).launch {
                         response.body()?.let {
+//                            Log.d("t",this.toString())
                             phonesDao.insertAllPhones(converters(listOf(it)))
+
                         }
                     }
                     in 300..399 -> Log.d("acierto", response.body().toString())

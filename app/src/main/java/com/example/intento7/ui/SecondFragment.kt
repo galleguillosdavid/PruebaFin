@@ -45,34 +45,20 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
-            model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+        model.liveDataFromLocal.observe(viewLifecycleOwner, androidx.lifecycle.Observer
+        {
+            model.getSuperHeroesByid(superheroesId).observe(viewLifecycleOwner
+                , androidx.lifecycle.Observer {
                 if (it != null) {
                     textViewId.text =             it.Id.toString()
                     textViewName.text =             it.Name
                     textViewPrice.text =         it.Price.toString()
-                    val im = Glide.with(this).load(it.Image).apply(RequestOptions.circleCropTransform()).into(imageView2)
-//                    textViewFirstAppearance.text =  it.firstAppearance
-//                    gender.text =                   it.gender
-//                    textViewAlignment.text =        it.alignment
-//                    textViewBase.text =             it.base
-//                    textViewEyeColor.text =         it.eyeColor
-//                    textViewGroupAffiliation.text = it.groupAffiliation
-//                    textViewHairColor.text =        it.hairColor
-//                    textViewOccupation.text =       it.occupation
-//                    textViewPlaceOfBith.text =      it.placeOfBirth
-//                    textViewPublisher.text =        it.publisher
-//                    textViewRace.text =             it.race
-//                    textViewRelatives.text =        it.relatives
-//                    textViewSlug.text =             it.slug
-//                    textViewXs.text =               it.xs
-//                    textViewSm.text =               it.sm
-//                    textViewMd.text =               it.md
+                    val im = Glide.with(this).load(it.Image).apply(RequestOptions
+                        .circleCropTransform()).into(imageView2)
+
 //                    textViewLg.text =               it.lg
-//                    val xs = Glide.with(this).load(it.xs).apply(RequestOptions.circleCropTransform()).into(imageView5)
-//                    val sm = Glide.with(this).load(it.sm).apply(RequestOptions.circleCropTransform()).into(imageView4)
-//                    val md = Glide.with(this).load(it.md).apply(RequestOptions.circleCropTransform()).into(imageView3)
-//                    val lg = Glide.with(this).load(it.lg).apply(RequestOptions.circleCropTransform()).into(imageView2)
+//                    val xs = Glide.with(this).load(it.xs).
+                //                    apply(RequestOptions.circleCropTransform()).into(imageView5)
                 }
             })
         })
@@ -85,10 +71,12 @@ class SecondFragment : Fragment() {
 
     fun buy() {
         val intent = Intent(Intent.ACTION_SEND)
-        val to = "info@plaplix.cl"
+        val to = "info@novaera.cl"
         val addressees = arrayOf(to)
-        val subject = "Super Heroe $superheroesId"
-        val message = "Hola \nVi este super Heroe llamado $fullName y quiero comprarlo llámame al _________"
+        val subject = "Consulata {PRODUCT_NAME} id {PRODUCT_ID}"
+        val message = "Hola \nVi EL Telefono {PRODUCT_NAME} de código " +
+                "{PRODUCT_ID} $fullName y me gustaría que me contactaran a este correo" +
+                " o al siguiente numero _______"
         intent.putExtra(Intent.EXTRA_EMAIL, addressees)
         intent.putExtra(Intent.EXTRA_SUBJECT, subject)
         intent.putExtra(Intent.EXTRA_TEXT, message)
