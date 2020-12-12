@@ -11,7 +11,7 @@ import androidx.fragment.app.activityViewModels
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.intento7.R
-import com.example.intento7.viewModel.SuperHeroesViewModel
+import com.example.intento7.viewModel.PhonesViewModel
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_second.*
 
@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_second.*
  */
 class SecondFragment : Fragment() {
 
-    private val model: SuperHeroesViewModel by activityViewModels()
+    private val model: PhonesViewModel by activityViewModels()
     private var superheroesId = 0
     var fullName = ""
 

@@ -1,34 +1,17 @@
 <resources>
-    <string name="app_name">Super Heroes</string>
+    <string name="app_name">Nova Era</string>
     <string name="action_settings">Settings</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="textViewId">Name</string>
+    <string name="textViewName">Name</string>
+    <string name="textViewPrice">Name</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    @string/id
 
-    <string name="textViewName">Nombre</string>
-    <string name="textViewCode">Código</string>
-    <string name="textViewFullName">Nombre Completo</string>
-    <string name="textViewAlterEgos">Oto Yo</string>
-    <string name="textViewFirstAppearance">Primera Apariencia</string>
-    <string name="gender">Genero</string>
-    <string name="textViewAlignment">Posicion Politica</string>
-    <string name="textViewBase">Base</string>
-    <string name="textViewEyeColor">Color de Ojos</string>
-    <string name="textViewGroupAffiliation">Grupo</string>
-    <string name="textViewHairColor">Color de Pelo</string>
-    <string name="textViewOccupation">Trabajo</string>
-    <string name="textViewPlaceOfBith">Lugar de Nacimiento</string>
-    <string name="textViewPublisher">Publicación</string>
-    <string name="textViewRace">Raza</string>
-    <string name="textViewRelatives">Parientes</string>
-    <string name="textViewSlug">slug</string>
-    <string name="textViewXs">Imagen xs</string>
-    <string name="textViewSm">Imagen sm</string>
-    <string name="textViewMd">Imagen md</string>
-    <string name="textViewLg">Imagen lg</string>
+
 </resources>

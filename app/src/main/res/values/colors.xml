@@ -8,4 +8,6 @@
     <color name="primary_text">#212121</color>
     <color name="secundary_text">#757575</color>
     <color name="divider_color">#BDBDBD</color>
+    <color name="teal_200">#BDEDBD</color>
+
 </resources>

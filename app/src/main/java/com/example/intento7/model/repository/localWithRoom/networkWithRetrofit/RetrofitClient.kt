@@ -7,12 +7,12 @@ class RetrofitClient {
     companion object {
 private const val URL_BASE = "https://my-json-server.typicode.com/Himuravidal/FakeAPIdata/"
 
-        fun getRetrofitClient(): SuperHeroesApi {
+        fun getRetrofitClient(): PhonesApi {
             val mRetrofit = Retrofit.Builder()
                 .baseUrl(URL_BASE)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-        return mRetrofit.create(SuperHeroesApi::class.java)
+        return mRetrofit.create(PhonesApi::class.java)
         }
     }
 }

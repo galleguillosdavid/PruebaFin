@@ -3,7 +3,7 @@ package com.example.intento7.model.repository.localWithRoom.networkWithRetrofit.
 
 import com.google.gson.annotations.SerializedName
 
-data class Gen3Item(
+data class PhonesItem(
     @SerializedName("id")
     val id: Int,
     @SerializedName("image")

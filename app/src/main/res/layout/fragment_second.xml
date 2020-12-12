@@ -57,7 +57,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center_horizontal"
-                android:text="@string/textViewPublisher"
+                android:text="@string/textViewName"
                 android:textColor="@color/divider_color"
                 android:textSize="20sp" />
 
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:ems="100"
                     android:inputType="textPersonName"
-                    android:text="@string/textViewFullName"
+                    android:text="@string/textViewPrice"
                     android:textSize="14sp" />
 
                 <TextView
@@ -82,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="@string/textViewFullName"
+                    android:text="@string/textViewPrice"
                     android:textColor="@color/divider_color"
                     android:textSize="14sp" />
 
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/textViewHairColor"
+                    android:text="@string/textViewId"
                     android:textSize="14sp" />
 
                 <TextView
@@ -100,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="@string/textViewHairColor"
+                    android:text="@string/textViewId"
                     android:textColor="@color/divider_color" />
 
             </LinearLayout>
